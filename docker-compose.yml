@@ -1,0 +1,23 @@
+version: '3'
+
+volumes:
+  mysql_vol:
+
+services:
+    web:
+        build: . 
+        ports:
+            - "3003:3000"
+        volumes:
+            - .:/rails_react_app
+        tty: true
+        stdin_open: true
+        depends_on:
+            - db
+                    
+    db:
+        image: mysql:5.7
+        environment:
+            - MYSQL_ROOT_PASSWORD=root
+        volumes:
+            - mysql_vol:/var/lib/mysql
