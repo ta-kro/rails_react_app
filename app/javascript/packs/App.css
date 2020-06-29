@@ -1,0 +1,61 @@
+/* App */
+
+.App {
+  width: 800px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(153, 150, 150);
+  background-color: #fafbfd;
+  border-radius: 4px;
+}
+
+.App p {
+  width: 220px;
+  color: white;
+  background-color: rgb(50, 50, 116);
+  border-radius: 2px;
+  padding: 4px 2px;
+  text-align: center;
+}
+
+
+/* Form */
+.Form input[type="text"] {
+  padding:4px 0;
+  margin: 8px;
+}
+
+.Form input[type="submit"] {
+  background-color: rgb(204, 201, 201);
+  padding: 4px 8px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+
+/* Todo */
+ul {
+  list-style-type: square;
+}
+
+li {
+  margin:6px 0;
+}
+
+.TodoList  button {
+  background-color: rgb(204, 201, 201);
+  padding: 2px 4px;
+  margin: 0 8px;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.TodoContent {
+  display: inline;
+  padding: 2px ;
+  margin: 0 8px;
+  cursor: pointer;
+}
