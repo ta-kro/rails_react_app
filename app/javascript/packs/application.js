@@ -1,8 +1,11 @@
 console.log('Hello World from Webpacker')
 
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from '../components/app';
+import 'bootstrap'
+import './bootstrap.scss'
+
+import React from 'react'
+import ReactDOM from 'react-dom'
+import App from '../components/app'
 
 document.addEventListener('DOMContentLoaded', () => {
   ReactDOM.render(
